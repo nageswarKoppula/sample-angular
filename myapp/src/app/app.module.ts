@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { PracticeComponent } from './practice/practice.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    PracticeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,15 +7,17 @@ import { NgxSpinnerService } from 'ngx-spinner';
   styleUrls: ['./practice.component.css']
 })
 export class PracticeComponent implements OnInit {
+  public flag: boolean;
 
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
 
-    this.spinner.show();
+  }
 
+  show(){
+    this.spinner.show();
     setTimeout(() => {
-      /** spinner ends after 5 seconds */
       this.spinner.hide();
     }, 5000);
   }

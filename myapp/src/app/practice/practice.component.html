@@ -1,12 +1,14 @@
 <p>
   practice works!
 </p>
+
+<button (click)="show()">button1</button>
 <ngx-spinner
-  bdOpacity = 0.9
-  bdColor = "#333"
-  size = "medium"
-  color = "#da2323"
-  type = "ball-8bits"
-  [fullScreen] = "true">
-  <p style="color: white" > Loading... </p>
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-spin"><br/><br/>
+  <p style="font-size: 20px; color: white">Loading...</p>
 </ngx-spinner>
+
+<div *ngIf="flag">dvjjgj</div>
